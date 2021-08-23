@@ -20,7 +20,7 @@
   </properties>
 
   <dependencies>
-    <!-- Utilizar version ANTLR instalada que genera el codigo fuente -->
+    <!-- Utilizar version ANTLR del plug-in (generador del codigo fuente) -->
     <dependency>
       <groupId>org.antlr</groupId>
         <artifactId>antlr4</artifactId>

@@ -1,3 +1,14 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    // Generacion archivos ANTLR en el paquete Java
+    "antlr4.generation": {
+        "mode": "external",
+        "language": "Java",
+        "listeners": true,
+        "visitors": true
+    },
+    "antlr4.debug": {
+        "visualParseTreeHorizontal": false,
+        "visualParseTreeClustered": true
+    }
 }
