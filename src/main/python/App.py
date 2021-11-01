@@ -1,18 +1,18 @@
 import sys
 from antlr4 import *
-from compiladorLexer import compiladorLexer
-from compiladorParser import compiladorParser
+from compiladoresLexer  import compiladoresLexer
+from compiladoresParser import compiladoresParser
 
 
 def main(argv):
-    archivo = "input/parentesis.txt"
+    archivo = "input/entrada.txt"
     if len(argv) > 1 :
         archivo = argv[1]
     input = FileStream(archivo)
-    lexer = compiladorLexer(input)
+    lexer = compiladoresLexer(input)
     stream = CommonTokenStream(lexer)
-    parser = compiladorParser(stream)
-    tree = parser.si()
+    parser = compiladoresParser(stream)
+    tree = parser.s()
     print(tree.toStringTree(recog=parser))
 
 if __name__ == '__main__':

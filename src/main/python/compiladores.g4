@@ -1,9 +1,5 @@
 grammar compiladores;
 
-@header {
-package compiladores;
-}
-
 fragment LETRA : [A-Za-z] ;
 fragment DIGITO : [0-9] ;
 
