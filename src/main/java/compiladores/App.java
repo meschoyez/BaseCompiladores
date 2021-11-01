@@ -13,13 +13,13 @@ public class App {
         CharStream input = CharStreams.fromFileName("input/entrada.txt");
 
         // create a lexer that feeds off of input CharStream
-        idLexer lexer = new idLexer(input);
+        compiladoresLexer lexer = new compiladoresLexer(input);
         
         // create a buffer of tokens pulled from the lexer
         CommonTokenStream tokens = new CommonTokenStream(lexer);
         
         // create a parser that feeds off the tokens buffer
-        idParser parser = new idParser(tokens);
+        compiladoresParser parser = new compiladoresParser(tokens);
                 
         // create Listener
         // ExpRegBaseListener escucha = new Escucha();

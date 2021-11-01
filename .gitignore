@@ -2,7 +2,9 @@
 #*
 target
 .antlr
-id*.java
+__pycache__
+compiladores*.java
+compiladores*.py
 *.out
 *.class
 *.jar
