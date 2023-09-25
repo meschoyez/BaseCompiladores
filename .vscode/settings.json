@@ -3,8 +3,8 @@
     // Generacion archivos ANTLR en el paquete Java
     "antlr4.generation": {
         "mode": "external",
-        // "language": "Java",
-        "language": "Python3",
+        "language": "Java",
+        // "language": "Python3",
         "listeners": true,
         "visitors": true
     },
